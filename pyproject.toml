@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mlops-workflow"
+version = "1.2.0"
+description = "This a project to hone my skills in mlops workflows. yuhuuuuuu!!"
+authors = ["Stefanos Kanellopoulos <skanelo.ai@gmail.com>"]
+readme = "README.md"
+# packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.2.0"
+pytest = "^7.3.0"
+pylint = "^2.17.2"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
