@@ -1,13 +1,6 @@
 name: Pre-Commit Checks
 
-on:
-  push:
-    branches:
-      - new_feature
-      - main
-  pull_request:
-    branches:
-      - main # Adjust this branch name as needed
+on: [push, pull_request]
 
 jobs:
   pre-commit:
@@ -31,7 +24,8 @@ jobs:
 
       - name: Run Pre-Commit Checks
         run: |
-          ruff
+          ruff check --fix .
+          ruff format .
           mypy .
           pytest --cov=. --cov-report=xml
 
