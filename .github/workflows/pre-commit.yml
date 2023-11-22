@@ -45,8 +45,4 @@ jobs:
           ruff check --fix .
           ruff format .
           mypy --explicit-package-bases .
-          pytest --cov=. --cov-report=xml
-
-      - name: Print coverage results
-        run: |
-          cat coverage
+          pytest --cov=.
