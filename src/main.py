@@ -17,4 +17,4 @@ if __name__ == "__main__":
     today = datetime.today()
     print(f"Today is {today}")
     print(add_two_numbers(1, 2))
-    print(subtract_two_numbers(1, 2))
+    # print(subtract_two_numbers(1, 2))
