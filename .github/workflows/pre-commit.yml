@@ -26,7 +26,7 @@ jobs:
         run: |
           ruff check --fix .
           ruff format .
-          mypy .
+          mypy --explicit-package-bases .
           pytest --cov=. --cov-report=xml
 
       - name: Print coverage results
