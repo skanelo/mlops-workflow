@@ -3,7 +3,8 @@ name: Pre-Commit Checks
 on:
   push:
     branches:
-      - main # Adjust this branch name as needed
+      - new_feature
+      - main
   pull_request:
     branches:
       - main # Adjust this branch name as needed
