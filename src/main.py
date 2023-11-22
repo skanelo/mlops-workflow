@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 def add_two_numbers(a: int, b: int) -> int:
-    """Add two numbers."""
+    """Add two numbers!"""
     return a + b
 
 
