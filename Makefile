@@ -1,10 +1,12 @@
-.PHONY: install check
+.PHONY: install typecheck test
 
 install:
 	poetry install --no-interaction
 
-check:
-	poetry run ruff check --fix .
+typecheck:
+	poetry run ruff check .
 	poetry run ruff format .
 	poetry run mypy --explicit-package-bases .
+
+test:
 	poetry run pytest --cov=.
