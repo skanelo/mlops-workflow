@@ -4,7 +4,7 @@ install:
 	poetry install --no-interaction
 
 typecheck:
-	poetry run ruff check --fix .
+	poetry run ruff check .
 	poetry run ruff format .
 	poetry run mypy --explicit-package-bases .
 

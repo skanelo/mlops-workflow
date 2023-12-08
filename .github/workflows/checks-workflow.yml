@@ -3,7 +3,7 @@ name: Checks Workflow
 on: [push, pull_request]
 
 jobs:
-  pre-commit:
+  worklfow-checks:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,4 +34,7 @@ jobs:
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
 
       - name: Run checks
-        run: make check
+        run: make typecheck
+
+      - name: Run checks
+        run: make typecheck
