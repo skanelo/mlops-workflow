@@ -1,6 +1,6 @@
 name: Checks Workflow
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   worklfow-checks:
