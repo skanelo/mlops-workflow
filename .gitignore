@@ -130,3 +130,5 @@ dmypy.json
 
 *_cache
 .vscode
+
+*.pt
